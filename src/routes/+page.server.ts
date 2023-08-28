@@ -7,7 +7,7 @@ export const load = (async ({ url, cookies, request }) => {
 
         const h = [];
         for (const header of request.headers.entries()) {
-            h.push(header);
+            h.push({ name: header[0], value: header[1] });
         }
         return h;
     }
