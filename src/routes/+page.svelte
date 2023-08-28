@@ -18,6 +18,6 @@
 		color: hsl(240, 100%, 40%);
 	}
 	.green {
-		color: hsl(120, 100%, 25%);
+		color: hsl(120, 100%, 26%);
 	}
 </style>
