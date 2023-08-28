@@ -1,4 +1,5 @@
 import type { PageServerLoad } from './$types'
+import { PRETEND_SECRET } from '$env/static/private'
 
 export const load = (async ({ url, cookies, request }) => {
 
@@ -17,6 +18,7 @@ export const load = (async ({ url, cookies, request }) => {
         host: url.host,
         renderedTS: new Date().getTime(),
         headers: mapHeaders(),
-        cookies: c
+        cookies: c,
+        pretendSecret: PRETEND_SECRET
     }
 }) satisfies PageServerLoad

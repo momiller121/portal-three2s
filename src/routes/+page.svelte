@@ -5,6 +5,7 @@
 
 <h1>portal.three2s.com</h1>
 <p>[served from: {data.host}]</p>
+<p>Fake secret: {data.pretendSecret}</p>
 
 <h2>Request Cookies</h2>
 <pre class="blue">{JSON.stringify(data.cookies, null, 2)}</pre>
